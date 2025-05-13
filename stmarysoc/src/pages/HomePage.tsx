@@ -11,8 +11,8 @@ const HomePage: React.FC = () => {
       <section className="relative h-[90vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.pexels.com/photos/208372/pexels-photo-208372.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" 
-            alt="Church Stained Glass" 
+            src="/images/alter.jpeg" 
+            alt="Church Altar" 
             className="w-full h-full object-cover" 
           />
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-purple-900/80"></div>
@@ -52,7 +52,7 @@ const HomePage: React.FC = () => {
             <div className="md:w-1/2">
               <div className="relative">
                 <img 
-                  src="https://images.pexels.com/photos/731082/pexels-photo-731082.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" 
+                  src="/images/alter_Landscape.jpeg" 
                   alt="Church Interior" 
                   className="rounded-lg shadow-xl" 
                 />
@@ -61,7 +61,7 @@ const HomePage: React.FC = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="md:w-1/2">
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 dark:text-white mb-6">
                 About Our Church
@@ -282,6 +282,34 @@ const HomePage: React.FC = () => {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Find Us Section */}
+      <section className="py-16 md:py-24 bg-gray-50 dark:bg-gray-800/50">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 dark:text-white mb-4">
+              Find Us
+            </h2>
+            <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+              121 Westmount Road East, Kitchener, ON, N2M 4Y6
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <div className="w-full max-w-2xl rounded-lg overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700">
+              <iframe
+                title="St. Mary's Orthodox Church Location"
+                src="https://www.google.com/maps?q=121+Westmount+Road+East,+Kitchener,+ON,+N2M+4Y6&output=embed"
+                width="100%"
+                height="350"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
