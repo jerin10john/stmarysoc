@@ -1,2 +1,2 @@
 # stmarysoc
-A NextJS project for the StMarysOrthodox Church Kitchener
+A Static Website for the St Mary's Kitchener Malankara Orthodox Church 
