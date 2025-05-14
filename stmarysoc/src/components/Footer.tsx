@@ -69,12 +69,14 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/about"
+                <a
+                  href="https://mosc.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-300 hover:text-maroon-400 transition-colors"
                 >
-                  About Us
-                </Link>
+                  Malankara Orthodox Syrian Church
+                </a>
               </li>
               <li>
                 <Link
@@ -82,14 +84,6 @@ const Footer: React.FC = () => {
                   className="text-gray-300 hover:text-maroon-400 transition-colors"
                 >
                   Saints
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about/leadership"
-                  className="text-gray-300 hover:text-maroon-400 transition-colors"
-                >
-                  Leadership
                 </Link>
               </li>
               <li>

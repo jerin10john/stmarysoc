@@ -103,10 +103,16 @@ const AboutPage: React.FC = () => {
                     </address>
                   </div>
                   <div className="aspect-video rounded-md overflow-hidden bg-gray-100 dark:bg-gray-700">
-                    <img 
-                      src="https://images.pexels.com/photos/1531677/pexels-photo-1531677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" 
-                      alt="Church location" 
-                      className="w-full h-full object-cover" 
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2897.1234567890123!2d-80.456789!3d43.456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf6ad02edccff%3A0xdd9df3e0e6a37f5c!2s121%20Westmount%20Rd%20E%2C%20Kitchener%2C%20ON%20N2M%204Y6!5e0!3m2!1sen!2sca!4v1234567890!5m2!1sen!2sca"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="St. Mary's Orthodox Church Location"
+                      className="w-full h-full"
                     />
                   </div>
                 </div>
@@ -144,7 +150,7 @@ const AboutPage: React.FC = () => {
               </div>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               <Link 
                 to="/about/saints" 
                 className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow"
@@ -158,14 +164,6 @@ const AboutPage: React.FC = () => {
                 className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow"
               >
                 <h3 className="text-lg font-serif font-semibold text-gray-900 dark:text-white mb-2">Patron Saint</h3>
-                <ArrowRight className="h-5 w-5 text-blue-700 dark:text-blue-400 mx-auto" />
-              </Link>
-              
-              <Link 
-                to="/about/leadership" 
-                className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow"
-              >
-                <h3 className="text-lg font-serif font-semibold text-gray-900 dark:text-white mb-2">Leadership</h3>
                 <ArrowRight className="h-5 w-5 text-blue-700 dark:text-blue-400 mx-auto" />
               </Link>
               

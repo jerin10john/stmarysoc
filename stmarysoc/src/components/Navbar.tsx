@@ -6,6 +6,7 @@ type NavItem = {
   name: string;
   path: string;
   children?: NavItem[];
+  external?: boolean;
 };
 
 const navItems: NavItem[] = [
@@ -19,10 +20,8 @@ const navItems: NavItem[] = [
     children: [
       { name: 'Saints', path: '/about/saints' },
       { name: 'Patron Saint', path: '/about/patron-saint' },
-      { name: 'Leadership', path: '/about/leadership' },
       { name: 'Vicar', path: '/about/vicar' },
-      { name: 'Malankara', path: '/about/malankara' },
-      { name: 'Daiosis', path: '/about/daiosis' },
+      { name: 'Malankara Orthodox Syrian Church', path: 'https://mosc.in/', external: true },
       { name: 'Managing Committee', path: '/about/committee' },
     ],
   },
@@ -121,13 +120,25 @@ const Navbar: React.FC = () => {
                   <div className="absolute left-0 mt-2 w-56 origin-top-left bg-white dark:bg-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-out transform scale-95 group-hover:scale-100 z-50 border border-gray-100 dark:border-gray-700">
                     <div className="py-2 rounded-lg bg-white dark:bg-gray-800">
                       {item.children.map((child) => (
-                        <Link
-                          key={child.name}
-                          to={child.path}
-                          className="block px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-maroon-50 dark:hover:bg-maroon-900/20 hover:text-maroon-700 dark:hover:text-maroon-400 transition-colors duration-150 ease-in-out"
-                        >
-                          {child.name}
-                        </Link>
+                        child.external ? (
+                          <a
+                            key={child.name}
+                            href={child.path}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-maroon-50 dark:hover:bg-maroon-900/20 hover:text-maroon-700 dark:hover:text-maroon-400 transition-colors duration-150 ease-in-out"
+                          >
+                            {child.name}
+                          </a>
+                        ) : (
+                          <Link
+                            key={child.name}
+                            to={child.path}
+                            className="block px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-maroon-50 dark:hover:bg-maroon-900/20 hover:text-maroon-700 dark:hover:text-maroon-400 transition-colors duration-150 ease-in-out"
+                          >
+                            {child.name}
+                          </Link>
+                        )
                       ))}
                     </div>
                   </div>
@@ -184,17 +195,33 @@ const Navbar: React.FC = () => {
                     }`}
                   >
                     {item.children.map((child) => (
-                      <Link
-                        key={child.name}
-                        to={child.path}
-                        className={`block px-3 py-2 rounded-md text-base font-medium ${
-                          location.pathname === child.path
-                            ? 'text-maroon-700 dark:text-maroon-400'
-                            : 'text-gray-600 dark:text-gray-400 hover:text-maroon-600 dark:hover:text-maroon-300'
-                        }`}
-                      >
-                        {child.name}
-                      </Link>
+                      child.external ? (
+                        <a
+                          key={child.name}
+                          href={child.path}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`block px-3 py-2 rounded-md text-base font-medium ${
+                            location.pathname === child.path
+                              ? 'text-maroon-700 dark:text-maroon-400'
+                              : 'text-gray-600 dark:text-gray-400 hover:text-maroon-600 dark:hover:text-maroon-300'
+                          }`}
+                        >
+                          {child.name}
+                        </a>
+                      ) : (
+                        <Link
+                          key={child.name}
+                          to={child.path}
+                          className={`block px-3 py-2 rounded-md text-base font-medium ${
+                            location.pathname === child.path
+                              ? 'text-maroon-700 dark:text-maroon-400'
+                              : 'text-gray-600 dark:text-gray-400 hover:text-maroon-600 dark:hover:text-maroon-300'
+                          }`}
+                        >
+                          {child.name}
+                        </Link>
+                      )
                     ))}
                   </div>
                 </div>

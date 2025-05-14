@@ -5,7 +5,6 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/about/AboutPage';
 import SaintsPage from './pages/about/SaintsPage';
 import PatronSaintPage from './pages/about/PatronSaintPage';
-import LeadershipPage from './pages/about/LeadershipPage';
 import VicarPage from './pages/about/VicarPage';
 import MalankaraPage from './pages/about/MalankaraPage';
 import MMVSPage from './pages/spiritual/MMVSPage';
@@ -23,7 +22,6 @@ function App() {
           <Route path="about" element={<AboutPage />} />
           <Route path="about/saints" element={<SaintsPage />} />
           <Route path="about/patron-saint" element={<PatronSaintPage />} />
-          <Route path="about/leadership" element={<LeadershipPage />} />
           <Route path="about/vicar" element={<VicarPage />} />
           <Route path="about/malankara" element={<MalankaraPage />} />
           <Route path="spiritual/mmvs" element={<MMVSPage />} />
