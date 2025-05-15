@@ -150,7 +150,7 @@ const AboutPage: React.FC = () => {
               </div>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
               <Link 
                 to="/about/saints" 
                 className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow"
@@ -172,6 +172,14 @@ const AboutPage: React.FC = () => {
                 className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow"
               >
                 <h3 className="text-lg font-serif font-semibold text-gray-900 dark:text-white mb-2">Malankara</h3>
+                <ArrowRight className="h-5 w-5 text-blue-700 dark:text-blue-400 mx-auto" />
+              </Link>
+              
+              <Link 
+                to="/about/committee" 
+                className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow"
+              >
+                <h3 className="text-lg font-serif font-semibold text-gray-900 dark:text-white mb-2">Committee</h3>
                 <ArrowRight className="h-5 w-5 text-blue-700 dark:text-blue-400 mx-auto" />
               </Link>
             </div>

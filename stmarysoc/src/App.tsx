@@ -7,6 +7,7 @@ import SaintsPage from './pages/about/SaintsPage';
 import PatronSaintPage from './pages/about/PatronSaintPage';
 import VicarPage from './pages/about/VicarPage';
 import MalankaraPage from './pages/about/MalankaraPage';
+import CommitteePage from './pages/about/CommitteePage';
 import MMVSPage from './pages/spiritual/MMVSPage';
 import SundaySchoolPage from './pages/spiritual/SundaySchoolPage';
 import OCYMPage from './pages/spiritual/OCYMPage';
@@ -24,6 +25,7 @@ function App() {
           <Route path="about/patron-saint" element={<PatronSaintPage />} />
           <Route path="about/vicar" element={<VicarPage />} />
           <Route path="about/malankara" element={<MalankaraPage />} />
+          <Route path="about/committee" element={<CommitteePage />} />
           <Route path="spiritual/mmvs" element={<MMVSPage />} />
           <Route path="spiritual/sunday-school" element={<SundaySchoolPage />} />
           <Route path="spiritual/ocym" element={<OCYMPage />} />

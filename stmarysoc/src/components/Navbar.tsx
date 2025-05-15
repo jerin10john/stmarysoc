@@ -108,12 +108,12 @@ const Navbar: React.FC = () => {
                       : 'text-gray-700 dark:text-gray-300 hover:text-maroon-600 dark:hover:text-maroon-300'
                   }`}
                 >
-                  <span className="flex items-center gap-2">
-                    {item.name}
-                    {item.children && item.children.length > 0 && (
-                      <ChevronDown className="ml-1.5 h-4 w-4" />
-                    )}
-                  </span>
+                  <span className="flex items-center gap-1">
+                      {item.name}
+                      {item.children && item.children.length > 0 && (
+                        <ChevronDown className="ml-0.5 h-4 w-4" />
+                      )}
+                    </span>
                 </Link>
 
                 {item.children && item.children.length > 0 && (
@@ -184,10 +184,10 @@ const Navbar: React.FC = () => {
                   >
                     {item.name}
                     {isSubMenuOpen(item.name) ? (
-                      <ChevronUp className="h-5 w-5" />
-                    ) : (
-                      <ChevronDown className="h-5 w-5" />
-                    )}
+                        <ChevronUp className="h-5 w-5 ml-1" />
+                      ) : (
+                        <ChevronDown className="h-5 w-5 ml-1" />
+                      )}
                   </button>
                   <div
                     className={`mt-1 pl-4 border-l-2 border-gray-200 dark:border-gray-700 ${
