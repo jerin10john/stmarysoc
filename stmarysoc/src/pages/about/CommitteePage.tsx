@@ -30,74 +30,58 @@ const CommitteePage: React.FC = () => {
       image: '/images/VeenethAchan.jpg'
     },
     {
-      name: 'Roy Jacob',
-      title: 'Treasurer',
-      image: 'https://via.placeholder.com/300x400?text=Roy+Jacob'
+      name: 'Mr. Yohannan Danial',
+      title: 'Secretary',
+      image: 'https://via.placeholder.com/300x400?text=Yohannan+Danial'
     },
     {
-      name: 'Jerry Manayath Rajan',
-      title: 'Secretary',
-      image: 'https://via.placeholder.com/300x400?text=Jerry+Manayath+Rajan'
+      name: 'Mr. Jose K. Thelapuram',
+      title: 'Trustee',
+      image: 'https://via.placeholder.com/300x400?text=Jose+K+Thelapuram'
     }
   ];
 
   // Committee members
   const committeeMembers: CommitteeMember[] = [
     {
-      name: 'Issac Johnson',
+      name: 'Ms. Angel Mathew',
       title: 'Committee Member',
-      image: 'https://via.placeholder.com/300x400?text=Issac+Johnson'
+      image: 'https://via.placeholder.com/300x400?text=Angel+Mathew'
     },
     {
-      name: 'Jibin John Cherian',
+      name: 'Ms. Bini Thomas',
       title: 'Committee Member',
-      image: 'https://via.placeholder.com/300x400?text=Jibin+John+Cherian'
+      image: 'https://via.placeholder.com/300x400?text=Bini+Thomas'
     },
     {
-      name: 'Tisha Anna Simon',
+      name: 'Mr. Cyril Philipose',
       title: 'Committee Member',
-      image: 'https://via.placeholder.com/300x400?text=Tisha+Anna+Simon'
+      image: 'https://via.placeholder.com/300x400?text=Cyril+Philipose'
     },
     {
-      name: 'Shine George Joseph',
+      name: 'Mr. John Koshy',
       title: 'Committee Member',
-      image: 'https://via.placeholder.com/300x400?text=Shine+George+Joseph'
+      image: 'https://via.placeholder.com/300x400?text=John+Koshy'
     },
     {
-      name: 'Babuji Philip',
+      name: 'Mr. Linto Mathew',
       title: 'Committee Member',
-      image: 'https://via.placeholder.com/300x400?text=Babuji+Philip'
+      image: 'https://via.placeholder.com/300x400?text=Linto+Mathew'
     },
     {
-      name: 'James Samuel',
+      name: 'Mr. Shynu John',
       title: 'Committee Member',
-      image: 'https://via.placeholder.com/300x400?text=James+Samuel'
+      image: 'https://via.placeholder.com/300x400?text=Shynu+John'
     },
     {
-      name: 'Sam Kurian',
+      name: 'Mr. Subish K. Mathew',
       title: 'Committee Member',
-      image: 'https://via.placeholder.com/300x400?text=Sam+Kurian'
-    },
-    {
-      name: 'Jitin George',
-      title: 'Committee Member',
-      image: 'https://via.placeholder.com/300x400?text=Jitin+George'
+      image: 'https://via.placeholder.com/300x400?text=Subish+K+Mathew'
     }
   ];
 
   // Special positions
-  const specialPositions: CommitteeMember[] = [
-    {
-      name: 'Mithun Oommen',
-      title: 'Ex-Officio',
-      image: 'https://via.placeholder.com/300x400?text=Mithun+Oommen'
-    },
-    {
-      name: 'Selin Philip',
-      title: 'Internal Auditor',
-      image: 'https://via.placeholder.com/300x400?text=Selin+Philip'
-    }
-  ];
+  const specialPositions: CommitteeMember[] = [];
 
   return (
     <div className="container mx-auto px-4 py-12 relative">
@@ -139,21 +123,7 @@ const CommitteePage: React.FC = () => {
         </div>
       </section>
 
-      <section className={`mb-16 transition-all duration-700 ease-in-out transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: '600ms' }}>
-        <h2 className="text-2xl font-serif font-bold text-center mb-10 text-gray-800 dark:text-white">
-          Special Positions
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
-          {specialPositions.map((member, index) => (
-            <UserConnectionCard 
-              key={index}
-              name={member.name}
-              title={member.title}
-              image={member.image}
-            />
-          ))}
-        </div>
-      </section>
+      {/* Special positions section removed as per updated committee structure */}
       </div>
     </div>
   );

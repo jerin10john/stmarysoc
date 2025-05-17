@@ -1,12 +1,46 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, Users, School, Heart } from 'lucide-react';
 import { ChurchDome, CrossIcon } from '../components/ChurchSvg';
 import ServiceCard from '../components/ServiceCard';
 
 const HomePage: React.FC = () => {
+  const [showBanner, setShowBanner] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Show banner only at the top of the page (with a small threshold)
+      setShowBanner(window.scrollY < 10);
+    };
+
+    // Add event listener
+    window.addEventListener('scroll', handleScroll);
+    
+    // Clean up
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div>
+      {/* Scroll Banner */}
+      <div 
+        className={`sticky top-0 z-50 bg-blue-600 text-white py-2 text-center shadow-md cursor-pointer hover:bg-blue-700 transition-all ${
+          showBanner ? 'opacity-100 h-auto' : 'opacity-0 h-0 py-0 overflow-hidden'
+        }`}
+        onClick={() => {
+          document.getElementById('upcoming-events')?.scrollIntoView({ behavior: 'smooth' });
+        }}
+      >
+        <div className="flex items-center justify-center text-sm font-medium">
+          Check out our upcoming events
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </div>
+      </div>
+      
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
@@ -224,7 +258,7 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Upcoming Events */}
-      <section className="py-16 md:py-24">
+      <section id="upcoming-events" className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 dark:text-white mb-4">

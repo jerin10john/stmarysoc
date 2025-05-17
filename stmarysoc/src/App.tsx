@@ -11,12 +11,15 @@ import CommitteePage from './pages/about/CommitteePage';
 import MMVSPage from './pages/spiritual/MMVSPage';
 import SundaySchoolPage from './pages/spiritual/SundaySchoolPage';
 import OCYMPage from './pages/spiritual/OCYMPage';
+import SpiritualPage from './pages/spiritual/SpiritualPage';
 import ContactPage from './pages/ContactPage';
 import ResourcesPage from './pages/ResourcesPage';
+import ScrollToTop from './hooks/useScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
@@ -26,6 +29,7 @@ function App() {
           <Route path="about/vicar" element={<VicarPage />} />
           <Route path="about/malankara" element={<MalankaraPage />} />
           <Route path="about/committee" element={<CommitteePage />} />
+          <Route path="spiritual" element={<SpiritualPage />} />
           <Route path="spiritual/mmvs" element={<MMVSPage />} />
           <Route path="spiritual/sunday-school" element={<SundaySchoolPage />} />
           <Route path="spiritual/ocym" element={<OCYMPage />} />

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PageHeader from '../../components/PageHeader';
 import { Users, BookOpen, Lightbulb, Heart } from 'lucide-react';
 
@@ -71,9 +72,12 @@ function OCYMPage() {
                 Be part of our mission to worship, study, and serve. Together, we can make a difference in our 
                 community through faith, fellowship, and service.
               </p>
-              <button className="px-6 py-3 bg-maroon-700 hover:bg-maroon-800 text-white font-medium rounded-md shadow-lg transition-all hover:shadow-xl">
+              <Link 
+                to="/contact"
+                className="inline-block px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white font-medium rounded-md shadow-lg transition-all hover:shadow-xl"
+              >
                 Contact Us to Join
-              </button>
+              </Link>
             </div>
           </div>
         </div>

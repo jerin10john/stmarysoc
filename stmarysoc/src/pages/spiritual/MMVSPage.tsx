@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PageHeader from '../../components/PageHeader';
 import { Users, BookOpen, Lightbulb, Heart } from 'lucide-react';
 
@@ -22,7 +23,7 @@ function MMVSPage() {
                 organization of the church to nurture and empower women. This organization persistently upholds and 
                 embodies its motto of 'pray, act, and shine' in every aspect of its existence.
               </p>
-              <p className="text-lg text-gray-600 dark:text-gray-400 font-normal">
+              <p className="text-xl text-gray-700 dark:text-gray-300 font-normal">
                 Established in 1928 under the guidance of the Late Very Rev. M.C. Kuriakose Ramban and led by 
                 K.M. Annamma and co-workers, the organization is dedicated to the spiritual progress of women, 
                 named after the Blessed Virgin Mary whom they recognize as their intercessory saint.
@@ -36,7 +37,7 @@ function MMVSPage() {
                   <BookOpen className="h-8 w-8 text-maroon-700 dark:text-maroon-400" />
                 </div>
                 <h3 className="text-xl font-medium text-gray-900 dark:text-white mb-4">Enlighten Family</h3>
-                <p className="text-gray-600 dark:text-gray-400 font-normal">
+                <p className="text-xl text-gray-700 dark:text-gray-300 font-normal">
                   MMVS enlightens families by imparting spiritual teachings and values, fostering a deep understanding 
                   of faith. Through initiatives like 'Bible Study' and leadership training, the organization actively 
                   contributes to the spiritual enlightenment and growth of families within the community.
@@ -48,7 +49,7 @@ function MMVSPage() {
                   <Lightbulb className="h-8 w-8 text-maroon-700 dark:text-maroon-400" />
                 </div>
                 <h3 className="text-xl font-medium text-gray-900 dark:text-white mb-4">Enable Women</h3>
-                <p className="text-gray-600 dark:text-gray-400 font-normal">
+                <p className="text-xl text-gray-700 dark:text-gray-300 font-normal">
                   Actively conduct and engage in conferences, retreats, seminars, and related programs to enrich 
                   the lives of women.
                 </p>
@@ -59,7 +60,7 @@ function MMVSPage() {
                   <Heart className="h-8 w-8 text-maroon-700 dark:text-maroon-400" />
                 </div>
                 <h3 className="text-xl font-medium text-gray-900 dark:text-white mb-4">Community Service</h3>
-                <p className="text-gray-600 dark:text-gray-400 font-normal">
+                <p className="text-xl text-gray-700 dark:text-gray-300 font-normal">
                   MMS actively engages in community service by leading and organizing fundraising efforts for various 
                   charities, providing essential support to those in need. Additionally, the organization promotes 
                   community well-being by offering teachings on faith and tradition.
@@ -76,9 +77,12 @@ function MMVSPage() {
                 Be part of our mission to pray, act, and shine in our community. Together, we can make a difference 
                 in the lives of women and families through spiritual growth and service.
               </p>
-              <button className="px-6 py-3 bg-maroon-700 hover:bg-maroon-800 text-white font-medium rounded-md shadow-lg transition-all hover:shadow-xl">
+              <Link 
+                to="/contact"
+                className="inline-block px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white font-medium rounded-md shadow-lg transition-all hover:shadow-xl"
+              >
                 Contact Us to Join
-              </button>
+              </Link>
             </div>
           </div>
         </div>

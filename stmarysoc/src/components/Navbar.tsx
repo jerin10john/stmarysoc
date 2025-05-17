@@ -48,6 +48,15 @@ const Navbar: React.FC = () => {
   const [openMenus, setOpenMenus] = useState<string[]>([]);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  
+  // Function to handle scroll to top when links are clicked
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -85,7 +94,7 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between h-20 px-2 md:px-6">
-          <Link to="/" className="flex items-center min-w-0 gap-2 md:gap-3 whitespace-nowrap">
+          <Link to="/" onClick={handleScrollToTop} className="flex items-center min-w-0 gap-2 md:gap-3 whitespace-nowrap">
             <img 
               src="/logos/STMOC_logo.png" 
               alt="St. Mary's Orthodox Church Logo" 
@@ -102,6 +111,7 @@ const Navbar: React.FC = () => {
               <div key={item.name} className="relative group">
                 <Link
                   to={item.path}
+                  onClick={handleScrollToTop}
                   className={`px-4 py-2.5 rounded-md text-sm font-medium transition-colors ${
                     location.pathname === item.path
                       ? 'text-maroon-700 dark:text-maroon-400'
@@ -134,6 +144,7 @@ const Navbar: React.FC = () => {
                           <Link
                             key={child.name}
                             to={child.path}
+                            onClick={handleScrollToTop}
                             className="block px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-maroon-50 dark:hover:bg-maroon-900/20 hover:text-maroon-700 dark:hover:text-maroon-400 transition-colors duration-150 ease-in-out"
                           >
                             {child.name}
@@ -213,6 +224,7 @@ const Navbar: React.FC = () => {
                         <Link
                           key={child.name}
                           to={child.path}
+                          onClick={handleScrollToTop}
                           className={`block px-3 py-2 rounded-md text-base font-medium ${
                             location.pathname === child.path
                               ? 'text-maroon-700 dark:text-maroon-400'
@@ -228,6 +240,7 @@ const Navbar: React.FC = () => {
               ) : (
                 <Link
                   to={item.path}
+                  onClick={handleScrollToTop}
                   className={`block px-3 py-2 rounded-md text-base font-medium ${
                     location.pathname === item.path
                       ? 'bg-maroon-50 dark:bg-maroon-900/20 text-maroon-700 dark:text-maroon-400'

@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { Moon, Sun } from 'lucide-react';
 
 const Layout: React.FC = () => {
   const [darkMode, setDarkMode] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     if (darkMode) {
@@ -14,6 +15,10 @@ const Layout: React.FC = () => {
       document.documentElement.classList.remove('dark');
     }
   }, [darkMode]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);

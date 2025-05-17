@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PageHeader from '../../components/PageHeader';
 import { BookOpen, Users, Lightbulb, Heart } from 'lucide-react';
 
@@ -23,7 +24,7 @@ function SundaySchoolPage() {
                 It takes care of the spiritual nurturing of the children, by bringing them up in the knowledge and 
                 fellowship of Jesus Christ and His Church.
               </p>
-              <p className="text-lg text-gray-600 dark:text-gray-400 font-normal">
+              <p className="text-xl text-gray-700 dark:text-gray-300 font-normal">
                 The Sunday School holds a pivotal role as a significant Spiritual Organization within our church 
                 community. Its primary objective is to foster the spiritual development of our children, ensuring 
                 they do not lag behind in their upbringing. Recognizing that spiritual growth is a lifelong journey, 
@@ -39,7 +40,7 @@ function SundaySchoolPage() {
                   <BookOpen className="h-8 w-8 text-maroon-700 dark:text-maroon-400" />
                 </div>
                 <h3 className="text-xl font-medium text-gray-900 dark:text-white mb-4">Tailored Classes</h3>
-                <p className="text-gray-600 dark:text-gray-400 font-normal">
+                <p className="text-xl text-gray-700 dark:text-gray-300 font-normal">
                   The Sunday School is structured into classes, organized according to age groups, and each group 
                   adheres to a specific curriculum designed for each year. Our academic year spans from February to 
                   November, culminating in annual exams at the conclusion of each year.
@@ -51,7 +52,7 @@ function SundaySchoolPage() {
                   <Users className="h-8 w-8 text-maroon-700 dark:text-maroon-400" />
                 </div>
                 <h3 className="text-xl font-medium text-gray-900 dark:text-white mb-4">Experienced Teachers</h3>
-                <p className="text-gray-600 dark:text-gray-400 font-normal">
+                <p className="text-xl text-gray-700 dark:text-gray-300 font-normal">
                   Our Sunday School is blessed with a dedicated team of experienced teachers who bring passion, 
                   wisdom, and a wealth of spiritual knowledge to the classrooms. These seasoned educators play a 
                   crucial role in guiding our students on their spiritual journey.
@@ -63,7 +64,7 @@ function SundaySchoolPage() {
                   <Lightbulb className="h-8 w-8 text-maroon-700 dark:text-maroon-400" />
                 </div>
                 <h3 className="text-xl font-medium text-gray-900 dark:text-white mb-4">Learning with Fun</h3>
-                <p className="text-gray-600 dark:text-gray-400 font-normal">
+                <p className="text-xl text-gray-700 dark:text-gray-300 font-normal">
                   Our innovative approach combines valuable lessons with interactive activities, ensuring that learning 
                   is not only educational but also fun. Through games, storytelling, and creative projects, we strive 
                   to create a lively and enjoyable atmosphere that captivates young minds.
@@ -80,9 +81,12 @@ function SundaySchoolPage() {
                 Give your children the gift of spiritual education in a nurturing and engaging environment. 
                 Together, we can help them grow in faith and wisdom.
               </p>
-              <button className="px-6 py-3 bg-maroon-700 hover:bg-maroon-800 text-white font-medium rounded-md shadow-lg transition-all hover:shadow-xl">
+              <Link 
+                to="/contact"
+                className="inline-block px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white font-medium rounded-md shadow-lg transition-all hover:shadow-xl"
+              >
                 Contact Us to Join
-              </button>
+              </Link>
             </div>
           </div>
         </div>
