@@ -33,23 +33,29 @@ const Footer: React.FC = () => {
             </div>
             <div className="flex space-x-4 mt-2">
               <a
-                href="#"
+                href="https://www.facebook.com/p/St-Marys-Malankara-Orthodox-Congregation-100064537305921/"
                 className="text-gray-300 hover:text-maroon-400 transition-colors"
                 aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Facebook className="h-6 w-6" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/stmaryskwc/"
                 className="text-gray-300 hover:text-maroon-400 transition-colors"
                 aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Instagram className="h-6 w-6" />
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@stmarysoc/shorts"
                 className="text-gray-300 hover:text-maroon-400 transition-colors"
                 aria-label="YouTube"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Youtube className="h-6 w-6" />
               </a>
@@ -131,23 +137,29 @@ const Footer: React.FC = () => {
           </p>
           <div className="flex space-x-4">
             <a
-              href="#"
+              href="https://www.facebook.com/p/St-Marys-Malankara-Orthodox-Congregation-100064537305921/"
               className="hover:text-maroon-400 transition-colors"
               aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Facebook className="h-5 w-5" />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/stmaryskwc/"
               className="hover:text-maroon-400 transition-colors"
               aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Instagram className="h-5 w-5" />
             </a>
             <a
-              href="#"
+              href="https://www.youtube.com/@stmarysoc/shorts"
               className="hover:text-maroon-400 transition-colors"
               aria-label="YouTube"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Youtube className="h-5 w-5" />
             </a>
