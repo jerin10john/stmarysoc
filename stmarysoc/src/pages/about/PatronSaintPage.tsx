@@ -77,10 +77,12 @@ const PatronSaintPage = () => {
                   throughout the liturgical year:
                 </p>
                 <ul className="list-disc pl-6 mb-6 text-gray-600 dark:text-gray-300">
-                  <li>The Nativity of the Theotokos (September 8)</li>
-                  <li>The Presentation of the Theotokos (November 21)</li>
+                  <li>Feast of St. Mary for Seeds (January 15)</li>
+                  <li>Feast of St. Mary for Crops (May 15)</li>
                   <li>The Annunciation (March 25)</li>
                   <li>The Dormition (August 15)</li>
+                  <li>The Presentation of the Theotokos (November 21)</li>
+                  
                 </ul>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-6 mb-3">
                   Icons of the Theotokos

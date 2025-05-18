@@ -187,7 +187,7 @@ const HomePage: React.FC = () => {
               <Users className="h-12 w-12 text-blue-700 dark:text-blue-400 mx-auto mb-4" />
               <h3 className="text-xl font-serif font-semibold text-gray-900 dark:text-white mb-2">MMVS</h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                Mar Gregorios Orthodox Christian Student Movement provides spiritual guidance to women in our community.
+                Marth Mariyam Vanitha Samajam (Women's wing of Orthodox Church of India) provides spiritual guidance to women in our community.
               </p>
               <Link 
                 to="/spiritual/mmvs" 
