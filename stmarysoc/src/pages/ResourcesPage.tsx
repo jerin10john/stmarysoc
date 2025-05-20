@@ -34,7 +34,7 @@ const ResourcePage: React.FC = () => {
                       The complete text of the Divine Liturgy in English and Malayalam.
                     </p>
                     <a
-                      href="#"
+                      href="/documents/Holy_Qurbana_Manglish.pdf"
                       className="inline-flex items-center text-blue-700 dark:text-blue-400 font-medium hover:text-blue-800 dark:hover:text-blue-300"
                     >
                       <Download className="h-5 w-5 mr-2" />
@@ -44,13 +44,13 @@ const ResourcePage: React.FC = () => {
 
                   <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
                     <h3 className="text-xl font-serif font-semibold text-gray-900 dark:text-white mb-3">
-                      Liturgical Calendar 2024
+                      Liturgical Calendar 2025
                     </h3>
                     <p className="text-gray-600 dark:text-gray-400 mb-4">
                       Annual calendar with feast days and fasting periods.
                     </p>
                     <a 
-                      href="#"
+                      href="/documents/Panjangom_English_25_Online.pdf"
                       className="inline-flex items-center text-blue-700 dark:text-blue-400 font-medium hover:text-blue-800 dark:hover:text-blue-300"
                     >
                       <Download className="h-5 w-5 mr-2" />

@@ -101,7 +101,7 @@ const Navbar: React.FC = () => {
               className="h-10 w-10 md:h-12 md:w-auto flex-shrink-0"
             />
             <span className="text-lg md:text-xl font-serif font-semibold whitespace-nowrap overflow-hidden text-ellipsis w-auto max-w-[60vw]">
-              St. Mary's Orthodox Congregation
+              St. Mary's Malankara Orthodox Syrian Congregation
             </span>
           </Link>
 
