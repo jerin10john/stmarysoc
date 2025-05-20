@@ -88,7 +88,7 @@ const CommitteePage: React.FC = () => {
       <div className={`transition-opacity duration-1000 ease-in-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
         <PageHeader 
           title="Church Committee" 
-          subtitle="Meet the dedicated team serving St. Mary's Orthodox Syrian Church"
+          subtitle="Meet the dedicated team serving St. Mary's Malankara Orthodox Syrian Congregation"
         />
 
       <section className={`mb-16 transition-all duration-700 ease-in-out transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: '200ms' }}>
