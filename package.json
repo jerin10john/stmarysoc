@@ -1,0 +1,19 @@
+{
+  "name": "stmarysoc",
+  "version": "1.0.0",
+  "description": "Church Website",
+  "main": "yes",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerin10john/stmarysoc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jerin10john/stmarysoc/issues"
+  },
+  "homepage": "https://github.com/jerin10john/stmarysoc#readme"
+}

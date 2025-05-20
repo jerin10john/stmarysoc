@@ -33,7 +33,7 @@ const VicarPage = () => {
                   
                   <div className="prose dark:prose-invert max-w-none">
                     <p className="text-gray-600 dark:text-gray-300 mb-4">
-                      Meet Fr. Vineeth Vattakunnel Kurian, the Vicar of St. John's Malankara Orthodox Syrian Church in Hamilton. 
+                      Meet Fr. Vineeth Vattakunnel Kurian, the Vicar of St. Mary's Malankara Orthodox Syrian Congregation in KWC Region. 
                       He comes from the ancient Vattakunnel Family in Kottayam that has nurtured and protected the rich heritage 
                       of Christian ideals and principles for many decades, with 28 priests having been ordained from the family. 
                       Fr. Vineeth is the 29th priest from this family, and his parents are Vattakunnel Abraham Kurian and 
