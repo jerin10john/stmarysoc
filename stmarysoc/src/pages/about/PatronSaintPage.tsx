@@ -102,12 +102,12 @@ const PatronSaintPage = () => {
                   Orthodox tradition is:
                 </p>
                 <blockquote className="my-6 px-4 py-2 border-l-4 border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-300">
-                  "Peace be with youm, Mary full of grace, the Lord is with you.
-                  Blessed are you among women, and blessed is the fruit of your
-                  womb."
+                  "Peace be with you, Mary full of grace, the Lord is with thee.
+                  Blessed are thou amongst women, and blessed is the fruit of thy
+                  womb..."
                 </blockquote>
                 <p className="text-gray-600 dark:text-gray-300">
-                  This prayer reminds us of St. Mary's unique role in salvation
+                  This prayer reminds us of St. Mary's unique role in the salvation
                   history and invites her intercession in our lives.
                 </p>
               </div>
