@@ -40,18 +40,18 @@ const HomePage: React.FC = () => {
           </svg>
         </div>
       </div>
-      
+
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/alter.jpeg" 
-            alt="Church Altar" 
-            className="w-full h-full object-cover" 
+          <img
+            src="/images/alter.jpeg"
+            alt="Church Altar"
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-purple-900/80"></div>
         </div>
-        
+
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
           <CrossIcon className="w-16 h-16 md:w-20 md:h-20 text-white mx-auto mb-6 opacity-80" />
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-4">
@@ -242,13 +242,13 @@ const HomePage: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link 
-              to="/contact" 
+              to="/contact"
               className="px-6 py-3 bg-white text-blue-700 font-medium rounded-md shadow-lg transition-all hover:shadow-xl"
             >
               Contact Us
             </Link>
-            <Link 
-              to="/resources" 
+            <Link
+              to="/resources"
               className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md shadow-lg transition-all hover:shadow-xl"
             >
               Resources
@@ -268,8 +268,53 @@ const HomePage: React.FC = () => {
               Mark your calendars for these special events and services.
             </p>
           </div>
-          
+
           <div className="max-w-3xl mx-auto">
+            {/* OVBS 2025 Event Card */}
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden mb-6 border-2 border-yellow-400">
+              <div className="p-6 flex flex-col md:flex-row gap-6 items-center">
+                <div className="min-w-16 h-16 bg-yellow-500 dark:bg-yellow-600 text-white flex flex-col items-center justify-center rounded-md mb-4 md:mb-0">
+                  <span className="text-sm font-medium">JUL</span>
+                  <span className="text-2xl font-bold">4-5</span>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-serif font-semibold text-gray-900 dark:text-white">Orthodox Vacation Bible School 2025</h3>
+                  <p className="text-gray-600 dark:text-gray-400 font-medium">Date: July 4th & 5th</p>
+                  <p className="text-gray-600 dark:text-gray-400 font-medium">Location: 121 Westmount Rd E, Kitchener</p>
+                  <p className="text-gray-700 dark:text-gray-300 mt-2 italic">Theme: Walk in Purity (Psalms 119:9)</p>
+                  <div className="mt-2 text-sm text-gray-700 dark:text-gray-300">
+                    <div>Contact:</div>
+                    <div> Phone Number : (647) 936-7744</div>
+                  </div>
+                  <div className="mt-3 text-xs text-gray-500 dark:text-gray-400 border-t pt-2">
+                    "How can a young person stay on the path of purity? By living according to your word." – Psalm 119:9
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Picnic 2025 Event Card */}
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden mb-6 border-2 border-green-400">
+              <div className="p-6 flex flex-col md:flex-row gap-6 items-center">
+                <div className="min-w-16 h-16 bg-green-600 dark:bg-green-700 text-white flex flex-col items-center justify-center rounded-md mb-4 md:mb-0">
+                  <span className="text-sm font-medium">JUL</span>
+                  <span className="text-2xl font-bold">26</span>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-serif font-semibold text-gray-900 dark:text-white">Picnic 2025</h3>
+                  <p className="text-gray-700 dark:text-gray-300 mt-2">Come and join us for a day filled with games, laughs, food, and unforgettable memories!</p>
+                  <p className="text-gray-600 dark:text-gray-400 font-medium mt-2">Date: July 26th</p>
+                  <p className="text-gray-600 dark:text-gray-400 font-medium">Location: Pinehurst Lake Conservation Area</p>
+                  <p className="text-gray-600 dark:text-gray-400 font-medium">Time: 10:00 am to 6:00 pm</p>
+                  <div className="mt-2 text-sm text-gray-700 dark:text-gray-300">
+                    <div>Contact:</div>
+                    <div>Linto: 226 961-2564</div>
+                    <div>Angel: 437 984-5669</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden mb-6">
               <div className="p-6 flex gap-6 items-center">
                 <div className="min-w-16 h-16 bg-blue-700 dark:bg-blue-800 text-white flex flex-col items-center justify-center rounded-md">
