@@ -8,15 +8,22 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
+# vite
+dist
+dist-ssr
+*.local
 
-# production
-/build
-
-# misc
+# editor
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
+*.suo
+*.ntvs
+*.njsproj
+*.sln
+*.sw?
+
 *.pem
 
 # debug
