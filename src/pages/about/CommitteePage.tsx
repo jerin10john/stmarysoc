@@ -25,9 +25,9 @@ const CommitteePage: React.FC = () => {
   // Leadership (executive committee)
   const leadership: CommitteeMember[] = [
     {
-      name: 'Rev. Fr. Vineeth V. Kurian',
+      name: 'Rev. Fr. Dr. Thomas George',
       title: 'President',
-      image: '/images/VeenethAchan.jpg'
+      image: '/images/ThomasAchan.jpg'
     },
     {
       name: 'Mr. Yohannan Danial',
@@ -79,9 +79,6 @@ const CommitteePage: React.FC = () => {
       image: 'https://via.placeholder.com/300x400?text=Subish+K+Mathew'
     }
   ];
-
-  // Special positions
-  const specialPositions: CommitteeMember[] = [];
 
   return (
     <div className="container mx-auto px-4 py-12 relative">
